@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+  <header class="p-0">
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="logo cafeteria">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="assets/logo-mobile.png" class="" alt="Logo do celular">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Modo noturno</label>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-2">
+        <h2 class="fw-bolt">
+          Pausa a sua rotina
+        </h2>
+        <p>Bem-vindo ao ambiente CA.fé</p>
+      </div>
+    </section>
+
+
+    <section class="padding-5">
+      <div class="container">
+        <div class="row g-3">
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 d-flex flex-column">
+              <img src="assets/buffet-card.png" class="card-img-top" alt="">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Cardápio variado</h5>
+                <p class="card-text">Nosso menu é completo para todo aquele que pode desfrutar o melhor do chefe.
+                  Fazemos o que somos.</p>
+                <a href="#" class="btn btn-default mt-auto" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <!-- aqui -->
+
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 d-flex flex-column">
+              <img src="assets/cafe-card.png" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Café primavera</h5>
+                <p class="card-text">Assim como o chão recebe as flores, estamos com o ambiente preparado para servir
+                  aos nossos clientes receber o melhor</p>
+                <a href="#" class="btn btn-default mt-auto">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100 d-flex flex-column">
+              <img src="assets/delivery-card.png" class="card-img-top" alt="">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Entrega a domicilio
+                </h5>
+                <p class="card-text">Nossos produtos estão prontos para chegarem até você. Tenha o melhor no conforto
+                  do lar.</p>
+                <a href="#" class="btn btn-default mt-auto">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-2">
+        <h2 class="fw-bolt">
+          Portas abertas para todos os públicos
+        </h2>
+        <p>Nosso espaço espera você todos os dias para provar o menu especial</p>
+      </div>
+    </section>
+
+
+
+
+    <section class="padding-5">
+      <div class="container">
+        <h4 class="py-4 text-center">Nossos produtos</h4>
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-6 col-lg-4 my-3">
+            <div class="card-personal" data-bs-toggle="modal" data-bs-target="#coffeTradicional">
+              <img src="assets/produtos-cafe-tradicional.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-center fw-bold">Cafés tradicionais</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-md-6 col-lg-4 my-3">
+            <div class="card-personal" data-bs-toggle="modal" data-bs-target="#coffeeSpecial">
+              <img src="assets/produtos-cafe-especial.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-center fw-bold">Cafés especiais</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-md-6 col-lg-4 my-3">
+            <div class="card-personal" data-bs-toggle="modal" data-bs-target="#vitaminas">
+              <img src="assets/produtos-vitaminas.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-center fw-bold">Smoothis e vitaminas</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-10 col-md-6 col-lg-4 my-3">
+            <div class="card-personal" data-bs-toggle="modal" data-bs-target="#paes">
+              <img src="assets/produtos-paes.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-center fw-bold">Pães e Focaccias</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-10 col-md-6 col-lg-4 my-3">
+            <div class="card-personal" data-bs-toggle="modal" data-bs-target="#doces">
+              <img src="assets/produtos-doces.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text-center fw-bold"> Doces</div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-10 col-md-6 col-lg-4 my-3">
+            <div class="card-personal" data-bs-toggle="modal" data-bs-target="#pier">
+              <img src="assets/produtos-salgados.png" class="ver" alt="...">
+              <div class="card-body">
+                <div class="text-center fw-bold">Salgados </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="banners banner-3 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary">
+        <!-- <h2 class="fw-bolt">
+          Esse site temático não é sobre café
+        </h2>
+        <p>Mas a respeito de coisas feitas com amor e dedicação</p> -->
+      </div>
+    </section>
+
+
+
+
+    <section class="padding-5">
+      <div class="container">
+        <div class="container border border-2 rounded p-3">
+          <h2 class="fs-3 pt-2 pb-4">Faça sua encomenda</h2>
+          <form action="">
+            <div class="group-input">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nome completo">
+                <label for="floatingInput">Nome completo</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="E-mail">
+                <label for="floatingInput">E-mail</label>
+              </div>
+
+
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingInput" placeholder="(99)9.9999-9999">
+                <label for="floatingInput">Celular</label>
+              </div>
+
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected> ---</option>
+                  <option value="1">Individual (até 5 pessoas)</option>
+                  <option value="2">Confraternização</option>
+                  <option value="3">Institucional matriz</option>
+                </select>
+                <label for="floatingSelect">Tipo de encomenda</label>
+              </div>
+            </div>
+
+            
+
+
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Aceito receber sms e promoções
+              </label>
+            </div>
+
+
+            <button type="submit" class="btn btn-default mt-3 paddingX-140">Enviar</button>
+            <button type="reset" class="btn btn-danger mt-3 paddingX-140">Limpar tudo</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- dos offcanvas 1,2,3 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="canvasRight">
+      <div class="offcanvas-header">
+        <h5 id="canvasRight">Café & Resto</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="px-3">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button btn-default collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Pães
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Massas nobres</strong> Fazemos pães com os melhores produtos, para garantirmos a qualidade para
+                todos nossos clientes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button btn-default collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Leites
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Para atender as necessidades humanas</strong> temos leite integral: Rico em gordura, com sabor
+                mais intenso e cremoso.
+                Semi-desnatado: Menos gordura que o integral, com sabor mais leve.
+                Desnatado: Quase sem gordura, ideal para quem busca reduzir o consumo de gorduras saturadas.
+                Lactose: Com menor quantidade de lactose, indicado para pessoas com intolerância.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button btn-default collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Frutas
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Temos as frutas no Café da Manhã</strong>
+                Iniciar o dia com uma porção de frutas é uma excelente maneira de garantir energia e nutrientes
+                essenciais para o organismo. As frutas são ricas em vitaminas, minerais, fibras e antioxidantes, que
+                desempenham um papel fundamental na manutenção da saúde.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fim dos offcanvas -->
+    </div>
+
+    <!---fim dos offcanvas-->
+
+
+
+
+    <!-- inicio dos modais -->
+
+    <!-- Modal cafés tradicionais-->
+    <div class="modal fade font-marrom" id="coffeTradicional" tabindex="-1" aria-labelledby="coffeTradicionalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="coffeTradicionalLabel">Cafés tradicionais são...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/produtos-cafe-tradicional.png" class="w-100" alt="">
+            <p>
+              aqueles que preservam métodos de cultivo, processamento e preparo mais antigos, transmitidos de geração em
+              geração. Sabor único e autêntico, intenso e complexo do que os cafés mais comercializados.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-default" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim do modal cafés tradicionais-->
+
+    <!-- Modal cafés especiais-->
+    <div class="modal fade font-marrom" id="coffeeSpecial" tabindex="-1" aria-labelledby="coffeeSpecialLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="coffeeSpecialLabel">Cafés especiais são...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/produtos-cafe-especial.png" class="w-100" alt="">
+            <p>
+              também conhecidos como cafés de gourmet ou de alta qualidade, representam um universo de sabores e aromas
+              que vão muito além da simples bebida estimulante.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-default" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim do modal cafés especiais-->
+
+
+    <!-- Modal vitaminas-->
+    <div class="modal fade font-marrom" id="vitaminas" tabindex="-1" aria-labelledby="vitaminasLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vitaminasLabel">Vitaminas...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/produtos-vitaminas.png" class="w-100" alt="">
+            <p>
+              desempenham um papel fundamental em diversas funções do corpo, como: fortalecimento do sistema
+              imunológico, produção de energia, manutenção da saúde da pele, cabelos e unhas. Nossas são de frutas
+              selecionadas, venha saborear.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-default" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim do modal vitaminas-->
+
+
+    <!-- Modal paes-->
+    <div class="modal fade font-marrom" id="paes" tabindex="-1" aria-labelledby="paesLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paesLabel">Pães e Focaccias...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/produtos-paes.png" class="w-100" alt="">
+            <p>
+              Pães e Focaccias são aqueles produzidos com ingredientes simples e naturais, como farinha de trigo, água,
+              fermento natural e sal. Focaccias: Uma Deliciosa Explosão de Sabores
+              A focaccia é um pão italiano de origem genovêsa, caracterizado por ser baixo, achatado e bastante
+              versátil.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-default" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim do modal paes-->
+
+
+    <!-- Modal doces-->
+    <div class="modal fade font-marrom" id="doces" tabindex="-1" aria-labelledby="docesLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="docesLabel">Doces...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/produtos-doces.png" class="w-100" alt="">
+            <p>
+              Venha comemorar conosco. Nossos bolos e doces são uma verdadeira obra de arte, feitos com ingredientes
+              selecionados e muito carinho, para proporcionar uma experiência única ao paladar.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-default" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim do modal doces-->
+
+
+    <!-- Modal pier-->
+    <div class="modal fade font-marrom text-center" id="pier" tabindex="-1" aria-labelledby="pierLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pierLabel">Salgados</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/produtos-salgados.png" class="w-100" alt="">
+            <p>Relaxa e saboreia! Nossos salgados são a combinação perfeita para um momento de descontração. Nossos
+              salgados são artesanais e feitos com ingredientes frescos.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-default" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fim do modal paes-->
+
+
+
+
+
+  </main>
+
+
+  <footer class="bg-marrom text-light pt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ul class="list-inline social-icons">
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-facebook text-light"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-instagram text-light"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-twitter text-light"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-12 text-center">
+          <p>&copy; Todos os direitos reservados. Desenvolvido por Carlos Nascimento.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
